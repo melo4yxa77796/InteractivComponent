@@ -1,0 +1,84 @@
+.rating-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #29303a;
+    border: none;
+    color: #6b747e;
+  }
+  button:hover {
+    background-color: #fd7715;
+    color: black;
+    cursor: pointer;
+  }
+  .rating-form h2 {
+    color: white;
+  }
+  .rating-form p {
+    color: #6b747e;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .submit-button {
+    width: 100%;
+    padding: 10px 20px;
+    background: #fd7715;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 20px 0;
+  }
+  
+  .submit-button:hover {
+    background-color: white;
+    transform: scale(1.05);
+  }
+  button.selected {
+    border-radius: 50%;
+    background: white;
+    color: black;
+  }
+  
+  
+  @media (max-width: 400px) {
+    .app-container {
+      width: 80%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .rating {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    button {
+      width: 40px;
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .rating-form h2 {
+      font-size: 18px;
+    }
+  
+    .rating-form p {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  
+    .submit-button {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  }
